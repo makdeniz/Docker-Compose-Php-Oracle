@@ -1,0 +1,10 @@
+version: '3'
+services:
+   php7-with-oci8:
+     build: '.'
+    #  build: './php72'
+     volumes:
+      - ./www:/var/www/html
+     ports:
+      - "8181:80"
+
